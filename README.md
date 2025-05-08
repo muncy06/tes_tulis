@@ -1,178 +1,21 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pilih Tingkatan - Madrasah Kaderisasi</title>
-  <style>
-    /* Reset dan dasar */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+# Madrasah Kaderisasi - PAGARNUSA UNUSIA
 
-    body {
-      font-family: Arial, sans-serif;
-      background-color: rgba(0, 0, 0, 0.84);
-      text-align: center;
-      overflow-x: hidden;
-    }
+Proyek ini adalah halaman web **Madrasah Kaderisasi** untuk **PAGARNUSA UNUSIA**, yang digunakan untuk memilih tingkatan yang sesuai dengan peserta pelatihan. Halaman ini memiliki latar belakang video dan desain yang menarik dengan pilihan tingkatan yang bisa diakses melalui tombol.
 
-/* Video Latar */
-#bgVideo {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  object-fit: cover;
-  opacity: 0.15;
-  filter: blur(1px);
-  transform: translate(-55%, -55%); /* Menempatkan video di tengah */
-}
+## Fitur Utama
 
+- **Latar Belakang Video:** Menggunakan video sebagai latar belakang yang memberikan kesan interaktif dan menarik.
+- **Tingkatan Pilihan:** Pengguna dapat memilih tingkatan pelatihan (POLOS, PUTIH, KUNING, MERAH) yang akan mengarahkan mereka ke formulir pendaftaran.
+- **Desain Responsif:** Desain yang responsif agar dapat diakses dengan nyaman di berbagai perangkat.
+- **Tombol Interaktif:** Pilihan tingkatan menggunakan tombol yang dapat diklik untuk mengarahkan pengguna ke link formulir masing-masing.
 
-/* Header */
-.header {
-  background-color: #008000b9;
-  padding: 20px 0;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  background-image: repeating-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.05),
-    rgba(255, 255, 255, 0.05) 10px,
-    transparent 10px,
-    transparent 20px
-  );
-  background-blend-mode: overlay;
-}
+## Instalasi
 
+Untuk mengatur dan menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
 
-    .header img {
-      height: 60px;
-    }
+### Langkah 1: Clone Repository
 
-    /* Judul */
-    .judul {
-      padding: 30px 20px;
-    }
+Clone repositori ini ke mesin lokal Anda dengan perintah berikut:
 
-    .judul h1 {
-      color: rgb(255, 255, 255);
-      font-size: 36px;
-      font-weight: bold;
-      text-transform: uppercase;
-      text-shadow: 2px 2px 4px rgba(173, 172, 172, 0.253);
-    }
-
-    .judul h2 {
-      color: rgb(255, 255, 255);
-      font-size: 50px;
-      font-weight: bold;
-      text-transform: uppercase;
-      text-shadow: 2px 2px 4px rgba(173, 172, 172, 0.253);
-    }
-    .judul p {
-      color: rgb(255, 255, 255);
-      font-size: 30px;
-      font-weight: 500;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.712);
-    }
-
-/* Container Pilihan */
-.container {
-  display: flex;
-  justify-content: center;
-  margin: 50px auto;
-  gap: 20px;
-  flex-wrap: wrap;
-  max-width: 800px;
-  opacity: 0.5; /* Menambahkan transparansi 50% */
-}
-
-
-    .box {
-      width: 120px;
-      height: 120px;
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-    }
-
-    .box:hover {
-      transform: scale(1.1);
-      box-shadow: 0 10px 15px rgba(0,0,0,0.5);
-    }
-
-    .box:active {
-      transform: scale(0.95);
-    }
-
-    /* Warna sesuai tingkatan */
-    .polos { background-color: #b1b1b1; color: #000; }
-    .putih { background-color: #f8f8f8; color: #000; }
-    .kuning { background-color: #fdd835; color: #000; }
-    .merah { background-color: #e53935; color: #000; }
-
-    /* Catatan */
-    .note {
-      margin-top: 20px;
-      color: red;
-      font-size: 14px;
-    }
-
-    @media screen and (max-width: 600px) {
-      .box {
-        width: 100px;
-        height: 100px;
-        font-size: 16px;
-      }
-
-      .judul h1, .judul p {
-        font-size: 30px;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Video Background -->
-  <video autoplay muted loop id="bgVideo">
-    <source src="salam.mp4" type="video/mp4">
-    Browser Anda tidak mendukung video.
-  </video>
-
-  <!-- Header Logo -->
-  <div class="header">
-    <img src="header.png" alt="Logo">
-  </div>
-
-  <!-- Judul Utama -->
-  <div class="judul">
-    <h1>MADRASAH</h1>
-    <h2>KADERISASI</h2>
-    <p>PAGARNUSA UNUSIA</p>
-  </div>
-
-  <!-- Pilihan Tingkatan -->
-  <div class="container">
-    <div class="box polos" onclick="location.href='https://forms.gle/yiMLfvP7n92bN6998'">POLOS</div>
-    <div class="box putih" onclick="location.href='https://forms.gle/yiMLfvP7n92bN6998'">PUTIH</div>
-    <div class="box kuning" onclick="location.href='https://forms.gle/yiMLfvP7n92bN6998'">KUNING</div>
-    <div class="box merah" onclick="location.href='https://forms.gle/yiMLfvP7n92bN6998'">MERAH</div>
-  </div>
-
-  <!-- Catatan -->
-  <p class="note">*Pilihlah sesuai tingkatan</p>
-
-</body>
-</html>
+```bash
+git clone https://github.com/username/repository.git
